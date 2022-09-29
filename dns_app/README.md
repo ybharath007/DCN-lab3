@@ -14,7 +14,7 @@ create a docker network named lab3
 > docker run --network lab3 --name fs -p 9090:9090 -it ybharath007/fs:latest  
 
 3. to run the user server, use below commands under US directory  
-> docker build -t ybharath007/fs:latest .  
+> docker build -t ybharath007/us:latest .  
 > docker run --network lab3 --name us -p 8080:8080 -it ybharath007/us:latest  
 
 4. register a dns record by make a PUT request at http://0.0.0.0:9090/register  
